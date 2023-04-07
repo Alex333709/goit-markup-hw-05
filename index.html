@@ -27,13 +27,13 @@
         </a>
         <ul class="header-list list">
           <li class="header-item">
-            <a class="header-link link" href="./index.html">Studio</a>
+            <a class="header-link link current" href="./index.html">Studio</a>
           </li>
           <li class="header-item">
             <a class="header-link link" href="./portfolio.html">Portfolio</a>
           </li>
           <li class="header-item">
-            <a class="header-link link" href="">Contacts</a>
+            <a class="header-link link" href="#">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -52,9 +52,9 @@
   <main>
     <!--===========================HERO=================================-->
     <section class="hero">
-      <div class="container overlay">
+      <div class="container">
         <h1 class="hero-title">Effective Solutions for Your Business</h1>
-        <button class="hero-button btn" type="button">Order Service</button>
+        <button class="hero-button btn" data-modal-open type="button">Order Service</button>
       </div>
     </section>
     <!--=================Advantages======================-->
@@ -63,63 +63,63 @@
         <h2 class="hidden-title visually-hidden" hidden>our advantagy</h2>
         <ul class="advantages-list list">
           <li class="advantages-item">
-          
-              <a class="advantages-soc-link" href>
-                <svg class="advantages-soc-icon" width="64" height="64">
-                  <use href="./images/icon/symbol-defs.svg#icon-antenna"></use>
-                </svg>
-              </a>
-              <h3 class="advantages-title">Strategy</h3>
-              <p class="advantages-text list">
-                Our goal is to identify the business problem to walk away with the perfect and
-                creative solution.
-              </p>
-           
+
+            <a class="advantages-soc-link" href>
+              <svg class="advantages-soc-icon" width="64" height="64">
+                <use href="./images/icon/symbol-defs.svg#icon-antenna"></use>
+              </svg>
+            </a>
+            <h3 class="advantages-title">Strategy</h3>
+            <p class="advantages-text list">
+              Our goal is to identify the business problem to walk away with the perfect and
+              creative solution.
+            </p>
+
           </li>
 
           <li class="advantages-item">
-            
-              <a class="advantages-soc-link" href>
-                <svg class="advantages-soc-icon" width="64" height="64">
-                  <use href="./images/icon/symbol-defs.svg#icon-clock"></use>
-                </svg>
-              </a>
-              <h3 class="advantages-title">Punctuality</h3>
-              <p class="advantages-text list">
-                Bring the key message to the brand's audience for the best price within the
-                shortest possible time.
-              </p>
-           
+
+            <a class="advantages-soc-link" href>
+              <svg class="advantages-soc-icon" width="64" height="64">
+                <use href="./images/icon/symbol-defs.svg#icon-clock"></use>
+              </svg>
+            </a>
+            <h3 class="advantages-title">Punctuality</h3>
+            <p class="advantages-text list">
+              Bring the key message to the brand's audience for the best price within the
+              shortest possible time.
+            </p>
+
           </li>
 
           <li class="advantages-item">
-            
-              <a class="advantages-soc-link" href>
-                <svg class="advantages-soc-icon" width="64" height="64">
-                  <use href="./images/icon/symbol-defs.svg#icon-diagram"></use>
-                </svg>
-              </a>
-              <h3 class="advantages-title">Diligence</h3>
-              <p class="advantages-text list">
-                Research and confirm brands that present the strongest digital growth
-                opportunities and minimize risk.
-              </p>
-            
+
+            <a class="advantages-soc-link" href>
+              <svg class="advantages-soc-icon" width="64" height="64">
+                <use href="./images/icon/symbol-defs.svg#icon-diagram"></use>
+              </svg>
+            </a>
+            <h3 class="advantages-title">Diligence</h3>
+            <p class="advantages-text list">
+              Research and confirm brands that present the strongest digital growth
+              opportunities and minimize risk.
+            </p>
+
           </li>
 
           <li class="advantages-item">
-            
-              <a class="advantages-soc-link" href>
-                <svg class="advantages-soc-icon" width="64" height="64">
-                  <use href="./images/icon/symbol-defs.svg#icon-astronaut"></use>
-                </svg>
-              </a>
-              <h3 class="advantages-title">Technologies</h3>
-              <p class="advantages-text list">
-                Design practice focused on digital experiences. We bring forth a deep passion for
-                problem-solving.
-              </p>
-            
+
+            <a class="advantages-soc-link" href>
+              <svg class="advantages-soc-icon" width="64" height="64">
+                <use href="./images/icon/symbol-defs.svg#icon-astronaut"></use>
+              </svg>
+            </a>
+            <h3 class="advantages-title">Technologies</h3>
+            <p class="advantages-text list">
+              Design practice focused on digital experiences. We bring forth a deep passion for
+              problem-solving.
+            </p>
+
           </li>
         </ul>
       </div>
@@ -343,7 +343,7 @@
             </a>
           </li>
           <li class="footer-item">
-            <a  class="footer-link link" href>
+            <a class="footer-link link" href>
               <svg class="footer-icon" width="24" height="24">
                 <use href="./images/icon/symbol-footer.svg#icon-twitter-1"></use>
               </svg>
@@ -367,6 +367,16 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button type="button" data-modal-close class="modal-close-btn">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icon/close-btm.svg#icon-close-btm"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js" ></script>
 </body>
 
 </html>
